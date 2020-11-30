@@ -942,3 +942,118 @@ html.is-animating .transition-fade {
     page-break-after: avoid;
   }
 }
+
+/*** Homepage Styles ***/
+
+.home-main,
+.revealTitle {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.home-main .img-wrapper {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.home-main .main-img {
+  background-image: url(/img/handTablet.webp);
+  flex-grow: 1;
+  max-height: 70vh;
+  max-width: 70vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin: 0 0 0 5vh;
+}
+
+.home-main .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1em;
+  padding: 1em;
+  align-self: center;
+}
+
+.cta {
+  padding: 0;
+  margin: 0.5em 0 0 0;
+  line-height: 1.5em;
+  font-size: 1.4em;
+  list-style: none;
+  font-family: "Roboto", "Open Sans", Verdana, sans-serif;
+  animation: ani-load 3s;
+}
+
+.cta li {
+  margin: 0.5em;
+}
+
+h2#cta-subtitle {
+  margin: 0 auto 1.5rem 1.5rem;
+  font-size: 1.45em;
+  color: aliceblue;
+}
+
+.revealTitle,
+.index-footer {
+  display: none;
+}
+
+.accent-text {
+  color: crimson;
+  font-size: 1.15em;
+}
+
+@media (max-width: 996px) {
+  .home-main .img-wrapper {
+    display: none;
+  }
+
+  .home-main {
+    justify-content: center;
+  }
+
+  .revealTitle {
+    display: block;
+    font-size: 0.9em;
+    margin: 2em auto 0 auto;
+  }
+
+  .vanish {
+    display: none;
+  }
+
+  .index-footer {
+    display: block;
+    height: 8vh;
+    background-color: #222;
+  }
+
+  .brand-logo,
+  .brand-logo-name {
+    font-size: 0.8em;
+  }
+
+  .footer-nav {
+    font-size: 0.5rem;
+  }
+
+  .link-style {
+    font-size: 0.5rem;
+  }
+
+  h1 img {
+    margin-right: 0.25em;
+  }
+
+  #cta-subtitle {
+    margin: 1em;
+  }
+}

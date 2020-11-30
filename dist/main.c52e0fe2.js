@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\ZenOs-10w0.ttf":[["ZenOs-10w0.55b9866a.ttf","ZenOs-10w0.ttf"],"ZenOs-10w0.ttf"],"C:\\Users\\drica\\OneDrive\\Documents\\GitHub\\Donar_Development\\img\\stormDarkCode.webp":[["stormDarkCode.bccd219e.webp","img/stormDarkCode.webp"],"img/stormDarkCode.webp"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\ZenOs-10w0.ttf":[["ZenOs-10w0.55b9866a.ttf","ZenOs-10w0.ttf"],"ZenOs-10w0.ttf"],"C:\\Users\\drica\\OneDrive\\Documents\\GitHub\\Donar_Development\\img\\stormDarkCode.webp":[["stormDarkCode.bccd219e.webp","img/stormDarkCode.webp"],"img/stormDarkCode.webp"],"C:\\Users\\drica\\OneDrive\\Documents\\GitHub\\Donar_Development\\img\\handTablet.webp":[["handTablet.b0398c32.webp","img/handTablet.webp"],"img/handTablet.webp"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57422" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57656" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
