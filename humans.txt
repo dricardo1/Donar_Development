@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> Don Ricardo JR <role> UI/UX Front End Developer <github> http://bit.ly/gh-profile-dr 
+
+# THANKS
+
+    <name> Wotan
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

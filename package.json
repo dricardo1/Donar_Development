@@ -1,0 +1,29 @@
+{
+  "name": "donardev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dricardo1/DonarDev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dricardo1/DonarDev/issues"
+  },
+  "homepage": "https://github.com/dricardo1/DonarDev#readme",
+  "dependencies": {
+    "swup": "^2.0.11"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
