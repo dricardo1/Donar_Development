@@ -19,6 +19,10 @@
   color: aliceblue;
 }
 
+.work-text {
+ font-family: "Roboto", "Open Sans", "Verdana", "Helvetica", sans-serif;
+}
+
 .accent-text {
   color: crimson;
   font-size: 1.5em;
@@ -124,7 +128,7 @@
 
   .revealTitle {
     display: block;
-    font-size: 1.5em;
+    font-size: 1rem;
     text-align: center;
   }
 
@@ -148,14 +152,14 @@
 
   .intro-text {
     color: #fff;
-    font-family: "ZenOs", "Verdana", "Geneva", "Helvetica", sans-serif;
+    font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica", sans-serif;
     font-weight: 600;
     padding: 1rem;
     font-size: 1em;
   }
 
   .wrapper {
-    padding: 0 5em;
+    padding: 0;
     flex-grow: 1;
   }
 
