@@ -20,7 +20,7 @@
 }
 
 .work-text {
- font-family: "Roboto", "Open Sans", "Verdana", "Helvetica", sans-serif;
+  font-family: "Roboto", "Open Sans", "Verdana", "Helvetica", sans-serif;
 }
 
 .accent-text {
@@ -81,7 +81,6 @@
   right: 6vw;
 }
 
-
 @media (max-width: 1300px) {
   .work-main .img-wrapper {
     display: none;
@@ -112,7 +111,7 @@
   .footer-nav {
     font-size: 0.5rem;
   }
-  
+
   footer .wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -152,7 +151,8 @@
 
   .intro-text {
     color: #fff;
-    font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica", sans-serif;
+    font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
+      sans-serif;
     font-weight: 600;
     padding: 1rem;
     font-size: 1em;
@@ -170,7 +170,6 @@
   body {
     background-image: none;
   }
-
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -182,13 +181,12 @@
     max-height: 70vh;
     width: auto;
   }
-  
+
   .btn {
     background-color: transparent;
     color: #fcfcfc;
     margin: 3vh auto;
   }
-
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
@@ -202,5 +200,4 @@
     flex-grow: 1;
     margin-top: 10em;
   }
-
 }

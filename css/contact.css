@@ -240,26 +240,21 @@ h3.revealTitle {
 /* iPad Pro Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    body {
-      overflow-y: hidden; /* Hide vertical scrollbar */
-      overflow-x: hidden; /* Hide horizontal scrollbar */
-    }
-
-    .intro-text {
-      padding: 0 3.5vh 0 .5vh;
-      margin: auto;
-    }
-
-    .main-img {
-      max-height: 70vh;
-      max-width: 70vh;
-      min-width: 40vh;
-      margin: 0;
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
 
+  .intro-text {
+    padding: 0 3.5vh 0 0.5vh;
+    margin: auto;
+  }
+
+  .main-img {
+    max-height: 70vh;
+    max-width: 70vh;
+    min-width: 40vh;
+    margin: 0;
+  }
 }
