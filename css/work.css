@@ -70,7 +70,15 @@
   -webkit-animation: pulse-white 6s infinite;
 }
 
-@media (max-width: 996px) {
+.blanket-party {
+  height: 158px;
+  width: auto;
+  position: relative;
+  right: 6vw;
+}
+
+
+@media (max-width: 1300px) {
   .work-main .img-wrapper {
     display: none;
   }
@@ -116,7 +124,8 @@
 
   .revealTitle {
     display: block;
-    font-size: 0.9em;
+    font-size: 1.5em;
+    text-align: center;
   }
 
   .link-style {
@@ -157,6 +166,7 @@
   body {
     background-image: none;
   }
+
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -168,12 +178,13 @@
     max-height: 70vh;
     width: auto;
   }
-
+  
   .btn {
     background-color: transparent;
     color: #fcfcfc;
     margin: 3vh auto;
   }
+
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
@@ -182,11 +193,10 @@
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
   .work-main {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    /* max-width: 60vw; */
     align-items: center;
     flex-grow: 1;
     margin-top: 10em;
   }
+
 }
