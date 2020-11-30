@@ -69,7 +69,6 @@
 
 .contact-main-section {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   flex-grow: 1;
 }
@@ -155,7 +154,7 @@ h3.revealTitle {
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin: 0 2vh 0 0;
+  margin: 0;
 }
 
 .intro-text {
@@ -163,7 +162,6 @@ h3.revealTitle {
   font-family: "ZenOs", "Verdana", "Geneva", "Helvetica", sans-serif;
   font-weight: 600;
   font-size: 1em;
-  padding: 0 3vh 0 1vh;
   margin: auto;
 }
 
@@ -240,14 +238,18 @@ h3.revealTitle {
 /* iPad Pro Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1400px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   body {
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
 
+  .footer {
+    padding-right: 3rem;
+  }
+
   .intro-text {
-    padding: 0 3.5vh 0 0.5vh;
+    padding: auto;
     margin: auto;
   }
 

@@ -506,11 +506,10 @@ p {
   font-family: "ZenOs", "Roboto", sans-serif;
 }
 
-header,
-footer {
+header {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 header {
@@ -524,10 +523,13 @@ footer .wrapper {
 }
 
 footer {
+  display: flex;
+  align-items: center;
   height: 10vh;
   padding: 3vw;
   background-color: #222;
   position: sticky;
+  justify-content: space-evenly;
 }
 
 .social-link img {
@@ -697,7 +699,8 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3vh;
+  padding: 1vw;
+  margin: 0;
 }
 
 .intro-text {
@@ -706,7 +709,7 @@ footer a:hover {
     sans-serif;
   font-weight: 600;
   padding: 1.5rem;
-  font-size: 1em;
+  font-size: 1.75rem;
 }
 
 .medic {
