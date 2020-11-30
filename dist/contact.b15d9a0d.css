@@ -1,0 +1,265 @@
+/*-- Contact Page Styles --*/
+.contact-main,
+.revealTitle {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.contact-main .img-wrapper {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  padding-left: 3vw;
+}
+
+.main-img {
+  background-image: url(/lady-points.7b849393.webp);
+  flex-grow: 1;
+  max-height: 70vh;
+  max-width: 70vh;
+  min-width: 20vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin: 0 0 0 18vh;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  padding: 1em;
+  align-self: center;
+}
+
+.revealTitle {
+  display: none;
+}
+
+.btn {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  padding: 10px 20px 10px 20px;
+  margin-left: 1rem;
+  border: solid #ffffff 2px;
+  text-decoration: none;
+  box-shadow: 0 0 0 0 rgba(#fff, 0.5);
+  -webkit-animation: pulse-white 3s infinite;
+}
+
+.form-btn {
+  color: #fff;
+  background-color: transparent;
+  margin: 0 auto 0 auto;
+  min-width: 95%;
+}
+
+.img-wrapper p {
+  margin: 0 auto 0 auto;
+  font-size: 1.5em;
+}
+
+.contact-main-section {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.contact-text {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin: 2vh auto 0 auto;
+  padding: 1vh;
+}
+
+.contact-form {
+  background-color: #202027;
+  width: 60vw;
+  width: 50vw;
+  max-width: 65%;
+  height: auto;
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 0 0 3vh 2vh;
+}
+
+.input-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group:last-child {
+  margin-bottom: 0;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  outline: none;
+  background: none;
+  border: 1px solid #2e3852;
+  font-size: 1em;
+  padding: 0.5em;
+  color: inherit;
+  border-radius: 5px;
+}
+
+.input-group input:focus {
+  border-color: #596da0;
+}
+
+p.ani-load {
+  animation: ani-load var(--ani-load-time) ease-in;
+}
+
+.ani-load-contact {
+  animation: ani-load-contact var(--ani-load-time) ease-in;
+}
+
+p textarea {
+  width: 100%;
+  border-radius: 6px;
+}
+
+h2.revealTitle {
+  font-size: 1.2em;
+}
+
+h3.revealTitle {
+  font-size: 0.9em;
+  margin: 3vh;
+}
+
+.intro {
+  background: #000;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.intro-text {
+  color: #fff;
+  font-family: "ZenOs", "Verdana", "Geneva", "Helvetica", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin: auto;
+}
+
+.em-text {
+  font-size: 1.1em;
+  color: crimson;
+}
+
+@keyframes ani-load-contact {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 996px) {
+  .contact-main-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 70vw;
+    max-width: inherit;
+    margin: 0 0 8vh 0;
+  }
+
+  .contact-main .img-wrapper {
+    display: none;
+  }
+
+  .contact-main {
+    justify-content: center;
+  }
+
+  .revealTitle {
+    display: block;
+    margin: 3em auto 0 auto;
+    font-size: 1em;
+  }
+
+  .vanish {
+    display: none;
+  }
+
+  .hidden {
+    visibility: hidden;
+    height: 0;
+  }
+
+  .brand-logo,
+  .brand-logo-name,
+  .footer-nav {
+    font-size: 0.5rem;
+  }
+
+  .link-style {
+    font-size: 0.5rem;
+  }
+
+  footer .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h1 img {
+    margin-right: 0.25em;
+  }
+}
+
+/* iPad Pro Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1400px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+  .footer {
+    padding-right: 3rem;
+  }
+
+  .intro-text {
+    padding: auto;
+    margin: auto;
+  }
+
+  .main-img {
+    max-height: 70vh;
+    max-width: 70vh;
+    min-width: 40vh;
+    margin: 0;
+  }
+}
+
+
+/*# sourceMappingURL=/contact.b15d9a0d.css.map */
