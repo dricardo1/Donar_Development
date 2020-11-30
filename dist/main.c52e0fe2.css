@@ -175,6 +175,7 @@ sup {
 
 img {
   border-style: none;
+  max-width: 100%;
 }
 
 /* Forms
@@ -1051,6 +1052,11 @@ h2#cta-subtitle {
 
   h1 img {
     margin-right: 0.25em;
+    display: inline-block;
+  }
+
+  .intro img {
+    display: inline;
   }
 
   #cta-subtitle {
