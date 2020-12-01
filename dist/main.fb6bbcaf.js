@@ -129,8 +129,10 @@ tl.to(".intro-text", {
   stagger: 0.25
 });
 tl.to(".intro", {
-  y: "-100%",
-  duration: .75
+  y: "-999%",
+  duration: 1,
+  delay: 1,
+  opacity: 0
 });
 tl.fromTo(".heading-text", {
   opacity: 0
@@ -143,13 +145,13 @@ tl.fromTo(".first", {
 }, {
   opacity: 1,
   duration: .25
-});
+}, "-=.35");
 tl.fromTo(".second", {
   opacity: 0
 }, {
   opacity: 1,
   duration: .25
-});
+}, "-=.25");
 tl.fromTo(".btn", {
   opacity: 0
 }, {
@@ -184,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58055" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59784" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
