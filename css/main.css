@@ -625,7 +625,8 @@ footer a:hover {
 .red {
   font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
     sans-serif;
-  font-weight: 500;
+    font-size: 2rem;
+  font-weight: bold;
   color: crimson;
 }
 
