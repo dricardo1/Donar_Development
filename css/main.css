@@ -482,7 +482,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
-  --ani-load-time: 500ms;
+  --ani-load-time: 300ms;
 }
 
 .wrapper {
@@ -759,7 +759,7 @@ html.is-animating .transition-fade {
 }
 
 .ani-load {
-  animation: ani-load 3s ease-in;
+  animation: ani-load 2.5s ease-in;
 }
 
 @keyframes ani-load {
@@ -991,7 +991,7 @@ html.is-animating .transition-fade {
   font-size: 1.4em;
   list-style: none;
   font-family: "Roboto", "Open Sans", Verdana, sans-serif;
-  animation: ani-load 3s;
+  animation: ani-load 2.5s;
 }
 
 .cta li {
