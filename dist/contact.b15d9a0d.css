@@ -74,7 +74,8 @@
 }
 
 .contact-text {
-  font-size: 2.25em;
+  color: #fff;
+  font-size: 1.75rem;
   font-weight: bold;
   margin: 2vh auto 0 auto;
   padding: 1vh;
@@ -159,7 +160,7 @@ h3.revealTitle {
 
 .intro-text {
   color: #fff;
-  font-family: "ZenOs", "Verdana", "Geneva", "Helvetica", sans-serif;
+  font-family: "ZenOs", "Verdana", "Open Sans", "Helvetica", sans-serif;
   font-weight: 600;
   font-size: 1em;
   margin: auto;
