@@ -36,7 +36,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -379,7 +379,6 @@ template {
   display: none;
 }
 
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -625,9 +624,9 @@ footer a:hover {
 .red {
   font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
     sans-serif;
-    font-size: 2rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: crimson;
+  color: #ff0000;
 }
 
 .mainSubtitle {
@@ -689,8 +688,6 @@ footer a:hover {
   color: #000;
   -webkit-animation: none;
 }
-
-
 
 .intro {
   background: #000;
@@ -755,7 +752,7 @@ html.is-animating .transition-fade {
 }
 
 .accent-text {
-  color: crimson;
+  color: #ff0000;
   font-size: 1.5em;
 }
 
@@ -1011,7 +1008,7 @@ h2#cta-subtitle {
 }
 
 .accent-text {
-  color: crimson;
+  color: #ff0000;
   font-size: 1.15em;
 }
 
