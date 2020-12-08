@@ -642,12 +642,13 @@ footer a:hover {
   border-radius: 9px;
   color: #ffffff;
   font-size: 0.9rem;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   margin-left: 1rem;
   border: solid #ffffff 2px;
   text-decoration: none;
   box-shadow: 0 0 0 0 rgba(#fff, 0.5);
   -webkit-animation: pulse-white 3s infinite;
+  cursor: pointer;
 }
 
 .btn:focus,
