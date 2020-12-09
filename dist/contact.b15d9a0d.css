@@ -97,6 +97,11 @@
   color: red;
 }
 
+.secured {
+  height: .5rem;
+  width: auto;
+}
+
 .input-group {
   margin-bottom: 2rem;
   display: flex;
