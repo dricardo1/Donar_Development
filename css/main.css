@@ -481,7 +481,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
-  --ani-load-time: 300ms;
+  /* --ani-load-time: 200ms; */
 }
 
 .wrapper {
@@ -526,7 +526,7 @@ footer {
   display: flex;
   align-items: center;
   height: 10vh;
-  padding: 3vw;
+  padding: 2vw;
   background-color: #222;
   position: sticky;
   justify-content: space-evenly;
@@ -551,7 +551,7 @@ footer {
 
 .brand-logo-name {
   display: inline;
-  font-size: 1.25em;
+  font-size: 1rem;
   font-weight: 400;
   color: white;
   font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
@@ -577,11 +577,11 @@ footer {
 .linkStyle {
   color: white;
   font-family: "ZenOs", "Roboto", "Verdana", "Helvetica", sans-serif;
-  font-size: 1.25em;
+  font-size: .75rem;
   text-decoration: none;
   vertical-align: middle;
-  margin: 0 1em 0 auto;
-  padding: 1em;
+  margin: auto;
+  padding: 0 1rem;
 }
 
 .small {
@@ -1044,10 +1044,6 @@ h2#cta-subtitle {
   }
 
   .footer-nav {
-    font-size: 0.5rem;
-  }
-
-  .link-style {
     font-size: 0.5rem;
   }
 
