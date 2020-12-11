@@ -526,15 +526,10 @@ footer {
   display: flex;
   align-items: center;
   height: 10vh;
-  padding: 2vw;
+  padding: 3vh;
   background-color: #222;
   position: sticky;
-  justify-content: space-evenly;
-}
-
-.social-link img {
-  width: 0.8rem;
-  margin: 0 0.15rem 0 auto;
+  justify-content: space-between;
 }
 
 .brand-logo {
@@ -574,7 +569,7 @@ footer {
   padding: 0;
 }
 
-.linkStyle {
+.link-style {
   color: white;
   font-family: "ZenOs", "Roboto", "Verdana", "Helvetica", sans-serif;
   font-size: 1rem;
@@ -582,6 +577,18 @@ footer {
   vertical-align: middle;
   margin: auto;
   padding: 0 1rem;
+}
+
+.footer-link-style {
+  color: white;
+  font-family: "ZenOs", "Roboto", "Verdana", "Helvetica", sans-serif;
+  font-size: .5rem;
+  text-decoration: none;
+  vertical-align: middle;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .small {
