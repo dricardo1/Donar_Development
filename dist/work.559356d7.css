@@ -163,6 +163,7 @@
 
   body {
     background-image: none;
+    width: 100vw;
   }
 }
 
