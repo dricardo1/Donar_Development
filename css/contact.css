@@ -8,7 +8,7 @@ body {
   background-image: url("../img/mars-cropped.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: cover;
+  background-size: cover;
 }
 
 .contact-main,
@@ -26,6 +26,10 @@ body {
   align-items: stretch;
   justify-content: flex-end;
   padding-left: 3vw;
+}
+
+.contact-nav {
+  margin-right: 6vh;
 }
 
 .main-img {
@@ -65,6 +69,7 @@ body {
   text-decoration: none;
   box-shadow: 0 0 0 0 rgba(#fff, 0.5);
   -webkit-animation: pulse-white 3s infinite;
+  animation: pulse-white 3s infinite;
 }
 
 .form-btn {
@@ -139,7 +144,7 @@ body {
 }
 
 p.ani-load {
-  animation: ani-load var(--ani-load-time) ease-in;
+  animation: ani-load 3s;
 }
 
 .ani-load-contact {

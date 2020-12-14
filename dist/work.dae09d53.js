@@ -125,16 +125,17 @@ var tl = gsap.timeline({
 });
 tl.to(".large-text", {
   y: "0%",
-  duration: .5
+  duration: .5,
+  stagger: 0.25
 });
 tl.to(".work-text", {
   y: "0%",
-  duration: 1,
+  duration: .5,
   stagger: 0.25
 });
 tl.to(".intro", {
   y: "-100%",
-  duration: 1
+  duration: .5
 });
 tl.fromTo(".accent-text", {
   opacity: 0
@@ -176,7 +177,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64471" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58479" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

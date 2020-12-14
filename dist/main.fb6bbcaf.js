@@ -125,33 +125,33 @@ var tl = gsap.timeline({
 });
 tl.to(".intro-text", {
   y: "0%",
-  duration: 1,
+  duration: .5,
   stagger: 0.25
 });
 tl.to(".intro", {
   y: "-999%",
-  duration: 1,
-  delay: 1.25,
+  duration: .5,
+  delay: .25,
   opacity: 0
 });
 tl.fromTo(".heading-text", {
   opacity: 0
 }, {
   opacity: 1,
-  duration: .5
+  duration: .45
 });
 tl.fromTo(".first", {
   opacity: 0
 }, {
   opacity: 1,
   duration: .25
-}, "-=.35");
+}, "-=.25");
 tl.fromTo(".second", {
   opacity: 0
 }, {
   opacity: 1,
   duration: .25
-}, "-=.25");
+}, "-=.15");
 tl.fromTo(".btn", {
   opacity: 0
 }, {
@@ -186,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64471" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58479" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
