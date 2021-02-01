@@ -131,14 +131,14 @@ tl.to(".intro-text", {
 tl.to(".intro", {
   y: "-999%",
   duration: .5,
-  delay: .25,
+  delay: .5,
   opacity: 0
 });
 tl.fromTo(".heading-text", {
   opacity: 0
 }, {
   opacity: 1,
-  duration: .45
+  duration: .5
 });
 tl.fromTo(".first", {
   opacity: 0
@@ -186,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63316" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64731" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
