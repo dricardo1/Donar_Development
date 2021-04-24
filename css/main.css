@@ -8,14 +8,9 @@
   font-display: swap;
 } 
 
-/* Author: Don Ricardo Jr, UI/UX Front End Developer @ Donar Development, LLC.
-  Minimalist portfolio website, hand-coded with <3. */
+/* Author: Don Ricardo Jr, UI/UX Front End Developer @ Donar Development.com
 
-/* @ all the Youtuber Designers & Devs for all the Black Magic Spells */
-
-/* @ Kyle Cook (https://blog.webdevsimplified.com), Dev Ed, Derek Banas, et. al., et. al. ...!    */
-
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+/* HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -26,7 +21,7 @@
 
 /* Font Awesome SVG icons (code-solid, magic-solid, pencil-ruler-solid) are licensed under the Creative Commons Attribution 4.0 International license: https://fontawesome.com/license */
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -480,7 +475,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Roboto", sans-serif;
 }
 
 img {
@@ -503,7 +498,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: "Roboto", "Open Sans", sans-serif;
+  font-family: "" "Roboto", "Open Sans", sans-serif;
 }
 
 .zen {
