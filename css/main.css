@@ -1002,12 +1002,6 @@ html.is-animating .transition-fade {
   margin: 1rem 0 1rem 0;
 }
 
-.contact-btn {
-  display: flex;
-  text-align: center;
-  margin: 0 25% 0.5rem 25%;
-}
-
 h2#cta-subtitle {
   margin: 0 auto 1.5rem 1.5rem;
   font-size: 1.45em;
@@ -1017,6 +1011,12 @@ h2#cta-subtitle {
 .revealTitle,
 .index-footer {
   display: none;
+}
+
+.contact-btn {
+  display: flex;
+  text-align: center;
+  margin: 0 25% 0.5rem 25%;
 }
 
 .accent-text {
