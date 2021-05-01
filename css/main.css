@@ -449,7 +449,7 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
+ * Allow only vertical resizing of text areas.
  */
 
 textarea {
@@ -458,7 +458,6 @@ textarea {
 
 /* ==============================================================================================================================
    Author's custom styles
-   嘿，中共，他妈的你的吴流感。 少林与美国永远！ 在河边见 https://bit.ly/3a3zWQj
    ============================================================================================================================== */
 
 *,
@@ -498,7 +497,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: "" "Roboto", "Open Sans", sans-serif;
+  font-family: "Roboto", "Open Sans", sans-serif;
 }
 
 .zen {
@@ -524,6 +523,7 @@ footer {
   display: flex;
   align-items: center;
   height: 10vh;
+  margin-top: 1rem;
   padding: 3vh 0;
   background-color: #202027;
   justify-content: space-between;
@@ -574,7 +574,8 @@ footer {
   text-decoration: none;
   vertical-align: middle;
   margin: auto;
-  padding: 0 1rem;
+  padding: .5rem;
+  border-radius: 3px;
 }
 
 .footer-link-style {
@@ -602,7 +603,7 @@ footer a:hover {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: aliceblue;
   font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
@@ -989,7 +990,7 @@ html.is-animating .transition-fade {
 
 .cta {
   padding: 0;
-  margin: 1rem 0;
+  margin: 0;
   line-height: 1.5em;
   font-size: 1.4em;
   list-style: none;
@@ -998,7 +999,13 @@ html.is-animating .transition-fade {
 }
 
 .cta li {
-  margin: 0.5em;
+  margin: 1rem 0 1rem 0;
+}
+
+.contact-btn {
+  display: flex;
+  text-align: center;
+  margin: 0 25% .5rem 25%;
 }
 
 h2#cta-subtitle {
