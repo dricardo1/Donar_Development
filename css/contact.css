@@ -141,7 +141,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.input-group input {
+/* .input-group input {
   outline: none;
   background: none;
   border: 1px solid #2e3852;
@@ -153,6 +153,20 @@ body {
 
 .input-group input:focus {
   border-color: #596da0;
+} */
+
+.input-group input {
+  outline: none;
+  background: none;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  padding: 0.5em;
+  color: inherit;
+  border-radius: 5px;
+}
+
+.input-group input:focus {
+  border-color: #fff;
 }
 
 p.ani-load {
