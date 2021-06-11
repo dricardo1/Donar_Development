@@ -235,7 +235,11 @@ h3.revealTitle {
     margin: 0;
     width: 100%;
     height: 100%;
-    background-image: none;
+    /* background-image: none; */
+    background-image: url("../img/mars-cropped.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   .contact-main-section {

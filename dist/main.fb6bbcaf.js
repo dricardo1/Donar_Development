@@ -125,8 +125,8 @@ var tl = gsap.timeline({
 });
 tl.to(".intro-text", {
   y: "0%",
-  duration: .5,
-  stagger: 0.25
+  duration: 1.5,
+  stagger: .15
 });
 tl.to(".intro", {
   y: "-999%",
@@ -186,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58377" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53899" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
