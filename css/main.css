@@ -1023,6 +1023,10 @@ h2#cta-subtitle {
   font-size: 1.15em;
 }
 
+.ccp {
+  display: none;
+}
+
 @media (max-width: 996px) {
   .home-main .img-wrapper {
     display: none;
