@@ -544,7 +544,7 @@ footer {
   display: inline;
   font-size: 1rem;
   font-weight: 400;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.1rem;
   color: white;
   font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
     sans-serif;
@@ -602,12 +602,12 @@ footer a:hover {
 }
 
 .title {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: aliceblue;
-  font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
-    sans-serif;
+  font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica", sans-serif;
   margin: 0 1em;
+  letter-spacing: .1em;
 }
 
 .title img {
@@ -619,7 +619,7 @@ footer a:hover {
     sans-serif;
   font-weight: 500;
   font-size: 2em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 .revealTitle {
@@ -887,7 +887,7 @@ html.is-animating .transition-fade {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
-  margin: 0 0 0 5vh;
+  margin: 0 0 0 7vw;
 }
 
 .home-main .call-to-action {
@@ -901,7 +901,7 @@ html.is-animating .transition-fade {
 
 .cta {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 2em;
   line-height: 1.5em;
   font-size: 1.4em;
   list-style: none;
@@ -927,7 +927,7 @@ h2#cta-subtitle {
 .contact-btn {
   display: flex;
   text-align: center;
-  margin: 0 25% 0.5rem 25%;
+  margin: 0 20%;
 }
 
 .accent-text {
@@ -938,6 +938,8 @@ h2#cta-subtitle {
 .ccp {
   display: none;
 }
+
+/*** Media Queries ***/
 
 @media (max-width: 996px) {
   .home-main .img-wrapper {
@@ -952,6 +954,14 @@ h2#cta-subtitle {
     display: block;
     font-size: 0.9em;
     margin: 2em auto 0 auto;
+  }
+
+  .subtitle {
+    font-size: 1.25em;
+  }
+
+  body > section > div.call-to-action > p {
+    margin-top: 2em;
   }
 
   .vanish {
@@ -979,7 +989,7 @@ h2#cta-subtitle {
   }
 
   h1 img {
-    margin-right: 0.25em;
+    margin-right: 0.5em;
     display: inline-block;
   }
 
@@ -990,6 +1000,10 @@ h2#cta-subtitle {
   #cta-subtitle {
     margin: 1em;
   }
+}
+
+body > section > div.call-to-action > p {
+  margin-top: 3em;
 }
 
 /* ==========================================================================
