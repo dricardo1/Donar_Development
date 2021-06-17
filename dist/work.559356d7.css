@@ -3,17 +3,18 @@
 
 .work-main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .work-image {
-  width: 30vw;
+  width: 45vw;
   margin: 2em auto 0 auto;
   height: auto;
-  max-width: 300px;
+  /* max-width: 340px; */
 }
 
 .work-title {
@@ -79,6 +80,20 @@
   align-items: flex-start;
 }
 
+.red-text {
+  color: red;
+}
+
+/* p.vet-text, p.vet-text a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+body > div > section:nth-child(3) > div > p.zen > span {
+  font-size: 1em;
+} */
+
 @media (max-width: 1300px) {
   .work-main .img-wrapper {
     display: none;
@@ -87,7 +102,7 @@
   .work-main {
     flex-direction: column;
     justify-content: center;
-    max-width: 80vw;
+    max-width: 85vw;
   }
 
   .work-main .work-image {
