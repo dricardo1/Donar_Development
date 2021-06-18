@@ -142,20 +142,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* .input-group input {
-  outline: none;
-  background: none;
-  border: 1px solid #2e3852;
-  font-size: 1em;
-  padding: 0.5em;
-  color: inherit;
-  border-radius: 5px;
-}
-
-.input-group input:focus {
-  border-color: #596da0;
-} */
-
 .input-group input {
   outline: none;
   background: none;
@@ -220,6 +206,10 @@ h3.revealTitle {
   color: #ff0000;
 }
 
+.red-text {
+  color: red;
+}
+
 @keyframes ani-load-contact {
   0% {
     transform: translateX(-100%);
@@ -251,7 +241,7 @@ h3.revealTitle {
   .contact-form {
     width: 70vw;
     max-width: inherit;
-    margin: 0 0 2vh 0;
+    margin: 6vh 0 4vh 0;
   }
 
   .contact-main .img-wrapper {

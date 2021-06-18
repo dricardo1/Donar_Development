@@ -510,7 +510,7 @@ header {
   justify-content: space-between;
   height: 6vh;
   padding: 1rem 1.5rem;
-  margin: 1rem;
+  margin: 0.5em 1em;
   width: 100vw;
 }
 
@@ -537,7 +537,7 @@ footer {
 }
 
 .brand-logo img {
-  padding: .5rem 0 0 0;
+  margin: 0 0.5rem;
 }
 
 .brand-logo-name {
@@ -594,6 +594,10 @@ footer {
   font-weight: 300;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .main-nav a:hover,
 footer a:hover {
   color: #9c9a9a;
@@ -602,12 +606,13 @@ footer a:hover {
 }
 
 .title {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 600;
   color: aliceblue;
-  font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica", sans-serif;
-  margin: 0 1em;
-  letter-spacing: .1em;
+  font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
+    sans-serif;
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
 .title img {
@@ -618,7 +623,7 @@ footer a:hover {
   font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
     sans-serif;
   font-weight: 500;
-  font-size: 2em;
+  font-size: 1.8rem;
   margin-bottom: 1.8rem;
 }
 
@@ -629,7 +634,7 @@ footer a:hover {
 .red {
   font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
     sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #ff0000;
 }
@@ -715,7 +720,7 @@ footer a:hover {
     sans-serif;
   font-weight: 600;
   padding: 1.5rem;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
 }
 
 .medic {
@@ -727,8 +732,9 @@ footer a:hover {
 }
 
 .vet-text {
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   color: #fff;
+  text-align: center;
 }
 
 .hide {
@@ -762,8 +768,7 @@ html.is-animating .transition-fade {
 }
 
 .accent-text {
-  color: #ff0000;
-  font-size: 1.5em;
+  color: red;
 }
 
 .ani-load {
@@ -888,7 +893,7 @@ html.is-animating .transition-fade {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
-  margin: 0 0 0 7vw;
+  margin: 0 0 0 11vw;
 }
 
 .home-main .call-to-action {
@@ -928,16 +933,11 @@ h2#cta-subtitle {
 .contact-btn {
   display: flex;
   text-align: center;
-  margin: 0 20%;
-}
-
-.accent-text {
-  color: #ff0000;
-  font-size: 1.15em;
+  margin: 0 25%;
 }
 
 .ccp {
-  display: none;
+  display: none !important;
 }
 
 /*** Media Queries ***/
@@ -1005,6 +1005,7 @@ h2#cta-subtitle {
 
 body > section > div.call-to-action > p {
   margin-top: 3em;
+  padding-left: 4vw;
 }
 
 /* ==========================================================================
@@ -1013,73 +1014,74 @@ body > section > div.call-to-action > p {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-   @media print {
-    *,
-    *::before,
-    *::after {
-      background: #fff !important;
-      color: #000 !important;
-      /* Black prints faster */
-      box-shadow: none !important;
-      text-shadow: none !important;
-    }
-  
-    a,
-    a:visited {
-      text-decoration: underline;
-    }
-  
-    a[href]::after {
-      content: " (" attr(href) ")";
-    }
-  
-    abbr[title]::after {
-      content: " (" attr(title) ")";
-    }
-  
-    /*
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-    a[href^="#"]::after,
-    a[href^="javascript:"]::after {
-      content: "";
-    }
-  
-    pre {
-      white-space: pre-wrap !important;
-    }
-  
-    pre,
-    blockquote {
-      border: 1px solid #999;
-      page-break-inside: avoid;
-    }
-  
-    /*
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-    thead {
-      display: table-header-group;
-    }
-  
-    tr,
-    img {
-      page-break-inside: avoid;
-    }
-  
-    p,
-    h2,
-    h3 {
-      orphans: 3;
-      widows: 3;
-    }
-  
-    h2,
-    h3 {
-      page-break-after: avoid;
-    }
+  thead {
+    display: table-header-group;
   }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
 
 /*# sourceMappingURL=/main.c52e0fe2.css.map */
