@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .work-image {
@@ -19,6 +19,7 @@
 
 .work-title {
   color: aliceblue;
+  margin-bottom: 1em;
 }
 
 .work-text {
@@ -52,7 +53,7 @@
   background-color: #fcfcfc;
   color: #000000;
   -webkit-animation: pulse-white 4s infinite;
-  animation: pulse-white 4s infinite;
+  animation: pulse-white 6s infinite;
 }
 
 .icon img {
@@ -106,7 +107,6 @@ body > div > section:nth-child(3) > div > p.zen > span {
   }
 
   .work-main .work-image {
-    margin: 1em;
     max-height: 70vh;
     width: auto;
   }
@@ -187,12 +187,6 @@ body > div > section:nth-child(3) > div > p.zen > span {
 
 /* Portrait */
 @media only screen and (min-device-width: 300px) and (max-device-width: 820px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .work-image {
-    margin: 2em 1em;
-    max-height: 70vh;
-    width: auto;
-  }
-
   .btn {
     background-color: transparent;
     color: #fcfcfc;
@@ -205,8 +199,8 @@ body > div > section:nth-child(3) > div > p.zen > span {
     justify-content: space-between;
     align-items: center;
     margin: .5rem;
-    padding: 1rem;
-    font-size: 0.8em;
+    padding: 1em;
+    font-size: 0.5rem;
     width: 80px;
     height: 80px;
     background-color: #222;
