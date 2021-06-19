@@ -157,7 +157,7 @@ body {
 }
 
 p.ani-load {
-  animation: ani-load 3s;
+  animation: ani-load 2s;
 }
 
 .ani-load-contact {
@@ -175,7 +175,6 @@ h2.revealTitle {
 
 h3.revealTitle {
   font-size: 0.9em;
-  margin: 3vh;
 }
 
 .intro {
@@ -241,7 +240,7 @@ h3.revealTitle {
   .contact-form {
     width: 70vw;
     max-width: inherit;
-    margin: 6vh 0 4vh 0;
+    margin: 0 0 6vh 0;
   }
 
   .contact-main .img-wrapper {
@@ -257,6 +256,11 @@ h3.revealTitle {
     margin: 1rem auto;
     font-size: 1rem;
   }
+
+  h2.revealTitle {
+    font-size: 1.2em;
+    margin: 0;
+}
 
   .vanish {
     display: none;

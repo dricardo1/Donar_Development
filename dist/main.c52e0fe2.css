@@ -484,7 +484,7 @@ img {
 .wrapper {
   max-width: 1400px;
   flex-grow: 1;
-  padding: 0 3vh;
+  padding: 0;
 }
 
 .full-height {
@@ -634,7 +634,7 @@ footer a:hover {
 .red {
   font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
     sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: bold;
   color: #ff0000;
 }
@@ -900,14 +900,14 @@ html.is-animating .transition-fade {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 1em;
-  padding: 1em;
+  margin: 0 6vw;
+  padding: 0.5em;
   align-self: center;
 }
 
 .cta {
-  padding: 0;
-  margin: 0 0 0 2em;
+  padding: .15em;
+  margin: 0 1em;
   line-height: 1.5em;
   font-size: 1.4em;
   list-style: none;
@@ -930,10 +930,14 @@ h2#cta-subtitle {
   display: none;
 }
 
+body > section > div.img-wrapper > h1 {
+  margin: 0 1em 0 0;
+}
+
 .contact-btn {
   display: flex;
   text-align: center;
-  margin: 0 25%;
+  margin: 0 15%;
 }
 
 .ccp {
@@ -954,11 +958,24 @@ h2#cta-subtitle {
   .revealTitle {
     display: block;
     font-size: 0.9em;
-    margin: 2em auto 0 auto;
+    margin: 0.7em auto -3rem auto;
   }
 
   .subtitle {
-    font-size: 1.25em;
+    font-size: 1em;
+  }
+
+  .subtitle.results {
+    font-size: 1.2em;
+  }
+
+  .call-to-action.results {
+    padding-top: 0;
+  }
+
+  p.vet {
+    padding-top: 1em;
+    margin: 0;
   }
 
   body > section > div.call-to-action > p {
@@ -972,12 +989,12 @@ h2#cta-subtitle {
   .index-footer {
     display: inline-flex;
     height: 10vh;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     background-color: #222;
   }
 
   .footer-link-style {
-    font-size: 0.5rem;
+    font-size: 1.2em;
   }
 
   .brand-logo,
@@ -1000,6 +1017,15 @@ h2#cta-subtitle {
 
   #cta-subtitle {
     margin: 1em;
+  }
+
+  .home-main .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0.5em;
+    align-self: center;
   }
 }
 
