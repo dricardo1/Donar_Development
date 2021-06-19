@@ -770,7 +770,7 @@ html.is-animating .transition-fade {
 }
 
 .ani-load {
-  animation: ani-load 4s ease-in;
+  animation: ani-load 1s ease-in;
 }
 
 @keyframes ani-load {
@@ -904,10 +904,10 @@ html.is-animating .transition-fade {
 }
 
 .cta {
-  padding: .15em;
+  padding: 0.15em;
   margin: 0 1em;
   line-height: 1.5em;
-  font-size: 1.4em;
+  font-size: 1.25em;
   list-style: none;
   font-family: "Roboto", "Open Sans", Verdana, sans-serif;
   animation: ani-load 3.5s;
@@ -1022,7 +1022,6 @@ body > section > div.img-wrapper > h1 {
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-    padding: 0.5em;
     align-self: center;
   }
 }
@@ -1033,13 +1032,9 @@ body > section > div.call-to-action > p {
 }
 
 /* iPad Pro Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1400px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .heading-text {
-      font-size: 1.6em;
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1400px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .heading-text {
+    font-size: 1.6em;
   }
 }
 
@@ -1051,9 +1046,9 @@ body > section > div.call-to-action > p {
   .revealTitle {
     font-size: 2em;
     margin: 2vh auto -40vh auto;
-}
+  }
 
-  p.ani-load{
+  p.ani-load {
     font-size: 1.5em;
     line-height: 1.5em;
   }
@@ -1061,42 +1056,36 @@ body > section > div.call-to-action > p {
   h2.revealTitle {
     font-size: 2em;
     margin: 0;
-}
-
-header {
-  margin: auto;
-}
-
-body > section > div.img-wrapper > h1 {
-  display: none;
-}
-
-.home-main .main-img {
-  width: 18vh;
-}
-
-} 
-
-/* iPad Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    .revealTitle {
-      font-size: 2em;
-      margin: 2vh auto -40vh auto;
   }
 
-    p.ani-load{
-      font-size: 1.5em;
-      line-height: 1.5em;
-    }
+  header {
+    margin: auto;
+  }
 
-    h2.revealTitle {
-      font-size: 2em;
-      margin: 0;
+  body > section > div.img-wrapper > h1 {
+    display: none;
+  }
+
+  .home-main .main-img {
+    width: 18vh;
+  }
+}
+
+/* iPad Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .revealTitle {
+    font-size: 2em;
+    margin: 2vh auto -40vh auto;
+  }
+
+  p.ani-load {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+
+  h2.revealTitle {
+    font-size: 2em;
+    margin: 0;
   }
 
   header {
@@ -1112,16 +1101,18 @@ body > section > div.img-wrapper > h1 {
   .intro-text {
     font-size: 1.5em;
   }
-
 }
 
 /* iPad Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .heading-text {
-      font-size: 1em;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .heading-text {
+    font-size: 1em;
+  }
+}
+
+/* Applies styles when Reduced Motion is enabled */
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation: none;
   }
 }
