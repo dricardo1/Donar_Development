@@ -469,7 +469,9 @@ textarea {
 body {
   padding: 0;
   margin: 0;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background-image: url("/img/stormDarkCode.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -511,7 +513,7 @@ header {
   height: 6vh;
   padding: 1rem 1.5rem;
   margin: 0.5em 1em;
-  width: 100vw;
+  width: 95vw;
 }
 
 footer .wrapper {
@@ -631,10 +633,14 @@ footer a:hover {
   display: none;
 }
 
+.heading-text {
+  font-size: 1.7em;
+}
+
 .red {
   font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
     sans-serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #ff0000;
 }
@@ -723,16 +729,8 @@ footer a:hover {
   font-size: 1.8rem;
 }
 
-.medic {
-  font-size: 2.75rem;
-}
-
-.large-text {
-  font-size: 1.1em;
-}
-
 .vet-text {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #fff;
   text-align: center;
 }
@@ -931,7 +929,7 @@ h2#cta-subtitle {
 }
 
 body > section > div.img-wrapper > h1 {
-  margin: 0 1em 0 0;
+  margin: 0;
 }
 
 .contact-btn {
@@ -946,7 +944,7 @@ body > section > div.img-wrapper > h1 {
 
 /*** Media Queries ***/
 
-@media (max-width: 996px) {
+@media (max-width: 768px) {
   .home-main .img-wrapper {
     display: none;
   }
@@ -959,6 +957,10 @@ body > section > div.img-wrapper > h1 {
     display: block;
     font-size: 0.9em;
     margin: 0.7em auto -3rem auto;
+  }
+
+  .vanish {
+    display: none;
   }
 
   .subtitle {
@@ -980,10 +982,6 @@ body > section > div.img-wrapper > h1 {
 
   body > section > div.call-to-action > p {
     margin-top: 2em;
-  }
-
-  .vanish {
-    display: none;
   }
 
   .index-footer {
@@ -1034,77 +1032,96 @@ body > section > div.call-to-action > p {
   padding-left: 4vw;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+/* iPad Pro Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1400px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .heading-text {
+      font-size: 1.6em;
+  }
+}
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+/* iPad Pro Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1400px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .revealTitle {
+    font-size: 2em;
+    margin: 2vh auto -40vh auto;
+}
+
+  p.ani-load{
+    font-size: 1.5em;
+    line-height: 1.5em;
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
+  h2.revealTitle {
+    font-size: 2em;
+    margin: 0;
+}
+
+header {
+  margin: auto;
+}
+
+body > section > div.img-wrapper > h1 {
+  display: none;
+}
+
+.home-main .main-img {
+  width: 18vh;
+}
+
+} 
+
+/* iPad Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .revealTitle {
+      font-size: 2em;
+      margin: 2vh auto -40vh auto;
   }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
+    p.ani-load{
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+
+    h2.revealTitle {
+      font-size: 2em;
+      margin: 0;
   }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  header {
+    margin: auto;
   }
 
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
+  .contact-main-section {
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
   }
 
-  pre {
-    white-space: pre-wrap !important;
+  .intro-text {
+    font-size: 1.5em;
   }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+}
 
-  /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+/* iPad Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .heading-text {
+      font-size: 1em;
   }
 }

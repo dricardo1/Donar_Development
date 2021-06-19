@@ -1,6 +1,11 @@
 /* Author: Don Ricardo Jr, UI/UX Front End Developer @ DonarDevelopment.com */
 /*-- Work Page Styles --*/
 
+body {
+  background-image: none;
+  background-color: #020202;
+}
+
 .work-main {
   display: flex;
   flex-direction: column;
@@ -29,6 +34,35 @@
 
 .work-text {
   font-family: "Roboto", "Open Sans", "Verdana", "Helvetica", sans-serif;
+}
+
+.intro {
+  background: #000;
+  color: #fff;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6vh;
+  margin: 0;
+}
+
+.intro-text {
+  color: #fff;
+  font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
+    sans-serif;
+  font-weight: 600;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.large-text {
+  font-size: 1.25em;
 }
 
 .icon-section {
@@ -82,20 +116,20 @@
 }
 
 .red-text {
-  color: red;
+  font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica", sans-serif;
+  font-size: 1.25em;
+  font-weight: normal;
+  color: #ff0000;
 }
 
-/* p.vet-text, p.vet-text a {
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-}
-
-body > div > section:nth-child(3) > div > p.zen > span {
-  font-size: 1em;
-} */
+/*** Media Queries ***/
 
 @media (max-width: 1300px) {
+
+  body {
+    height: auto;
+  }
+
   .work-main .img-wrapper {
     display: none;
   }
@@ -103,17 +137,10 @@ body > div > section:nth-child(3) > div > p.zen > span {
   .work-main {
     flex-direction: column;
     justify-content: center;
-    max-width: 85vw;
   }
 
   .work-main .work-image {
     max-height: 70vh;
-    width: auto;
-  }
-
-  .brand-logo {
-    display: block;
-    margin: 0 auto 0 auto;
   }
 
   .brand-logo,
@@ -143,29 +170,6 @@ body > div > section:nth-child(3) > div > p.zen > span {
     font-size: 0.75em;
     text-align: center;
     margin: 2vh auto;
-  }
-
-  .intro {
-    background: #000;
-    top: 0;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 6vh;
-  }
-
-  .intro-text {
-    color: #fff;
-    font-family: "ZenOs", "Roboto", "Open Sans", "Verdana", "Helvetica",
-      sans-serif;
-    font-weight: 600;
-    padding: 1rem;
-    font-size: 1em;
   }
 
   .wrapper {
@@ -222,5 +226,12 @@ body > div > section:nth-child(2) > div > div > a:nth-child(3) > div > span > i 
     align-items: center;
     flex-grow: 1;
     margin-top: 10em;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+      padding: 1rem 1.5rem;
+      margin: auto !important;
   }
 }

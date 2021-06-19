@@ -29,10 +29,6 @@ body {
   padding-left: 3vw;
 }
 
-.contact-nav {
-  margin-right: 6vh;
-}
-
 .main-img {
   background-image: url(/lady-points.7b849393.webp);
   flex-grow: 1;
@@ -219,13 +215,14 @@ h3.revealTitle {
   }
 }
 
+
+
 @media (max-width: 996px) {
   body {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-    /* background-image: none; */
     background-image: url("/mars-cropped.eeb5cd42.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -301,10 +298,41 @@ h3.revealTitle {
   }
 
   .main-img {
-    max-height: 70vh;
-    max-width: 70vh;
-    min-width: 40vh;
+    max-height: 60vh;
+    max-width: 40vh;
     margin: 0;
+  }
+
+  h2.revealTitle {
+    font-size: 2em;
+    margin: 0;
+  }
+}
+
+/* iPad Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    p.ani-load{
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+
+    h2.revealTitle {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    h3.revealTitle {
+      font-size: 1.5em;
+    }
+
+  .contact-form {
+    width: 45vw;
+    margin: auto;
   }
 }
 
