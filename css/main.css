@@ -1106,9 +1106,16 @@ body > section > div.call-to-action > p {
   }
 }
 
-/* Applies styles when Reduced Motion is enabled */
+/* Accessibility */
+
 @media screen and (prefers-reduced-motion: reduce) {
   * {
-    animation: none;
+    /* Very short durations means JavaScript that relies on events still works */
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
+
+
+
