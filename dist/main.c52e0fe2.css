@@ -484,7 +484,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1400px;
+  width: 100%;
   flex-grow: 1;
   padding: 0;
 }
@@ -1017,7 +1017,7 @@ body > section > div.img-wrapper > h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0;
+    margin: -4vh 0 0 0;
     align-self: center;
   }
 }
@@ -1106,12 +1106,19 @@ body > section > div.call-to-action > p {
   }
 }
 
-/* Applies styles when Reduced Motion is enabled */
+/* Accessibility */
+
 @media screen and (prefers-reduced-motion: reduce) {
   * {
-    animation: none;
+    /* Very short durations means JavaScript that relies on events still works */
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
+
+
+
 
 
 /*# sourceMappingURL=/main.c52e0fe2.css.map */
